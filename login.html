@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Login beeBeneficios</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="img/icons/favicon.png" type="image/x-icon" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+	<link href="css/fonts.min.css" rel="stylesheet" type="text/css">
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/mq.css">
+
+</head>
+
+<body>
+	<main class="main-login">
+		<a href="https://api.whatsapp.com/send?phone=+51966337361" target="_blank" class="whatsapp">
+			<i class="fab fa-whatsapp"></i>
+		</a>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mx-auto navbar-login">
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="modal" data-target=".modal-sobreBeeBeneficios">Sobre beeBeneficios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pasosRegistro.html" target="_blank">Pasos de registro</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="preguntasFrecuentes.html" target="_blank">Preguntas frecuentes</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="grid-login">
+			<div class="container-form-login">
+				<img src="img/logos/logoBeeBeneficios.svg" class="logo-form-login" alt="Logotipo Bee Beneficios">
+				<form class="form-login nav-shadow">
+					<h2 class="title-login">
+						Inicia sesión
+					</h2>
+					<p class="info-form">
+						¡Bienvenido a beeBeneficios!
+					</p>
+					<div class="form-group">
+						<label for="emailInput">Correo electrónico</label>
+						<input type="email" class="form-control" id="emailInput" aria-describedby="idHelp">
+						<div class="invalid-feedback">
+							Número incorrecto
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputPassword" class="label-help">Contraseña
+							<!-- <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Recuerda que tu primera contraseña será tu código de empresa">
+								<span class="material-icons">
+									help
+								</span>
+							</button> -->
+						</label>
+						<input id="password-field-login" type="password" class="form-control" name="password">
+						<span toggle="#password-field-login" class="fa fa-fw fa-eye-slash field-icon toggle-password"></span>
+						<div class="invalid-feedback">
+							Contraseña incorrecta
+						</div>
+					</div>
+			
+					<div class="wrap-btns-login">
+			
+						<a href="index.html" class="btn btn-primario btn-block" data-toggle="modal" data-target=".modal-correoNoConfirmado">
+							Iniciar sesión
+						</a>
+			
+						<!-- <hr> -->
+			
+						<button type="button" class="btn btn-social btn-facebook d-none">
+							<img src="img/icons/facebook.png" alt="Facebook">
+							Ingresa con Facebook
+						</button>
+			
+						<button type="button" class="btn btn-social btn-google d-none">
+							<img src="img/icons/google.png" alt="Google">
+							Ingresa con Google
+						</button>
+			
+						<div class="link-registro">
+							¿No tienes cuenta?
+							<a href="validador.html" class="btn btn-link">
+								Regístrate aquí
+							</a>
+						</div>
+			
+						<button type="button" class="btn btn-link " data-toggle="modal" data-target=".modal-contra-olvidada">
+							¿Olvidaste tu contraseña?
+						</button>
+					</div>
+			
+				</form>
+			</div>
+			<div class="bg-login">
+			</div>
+		</div>
+		
+	</main>
+	<footer>
+		<div class="footer-main">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3">
+						<ul class="list-group-footer">
+							<li class="list-group-item">
+								<h2>Nosotros</h2>
+							</li>
+							<li class="list-group-item">
+								<a href="" data-toggle="modal" data-target=".modal-acercaDeBee">
+									Acerca de Bee
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="" data-toggle="modal" data-target=".modal-sobreBeeBeneficios">
+									Sobre BeeBeneficios
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="preguntasFrecuentes.html" target="_blank">
+									Preguntas frecuentes
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<ul class="list-group-footer">
+							<li class="list-group-item">
+								<h2>BeeBeneficios</h2>
+							</li>
+							<li class="list-group-item">
+								<a href="terminosYcondiciones.html" target="_blank">
+									Términos & condiciones
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="politicasDePrivacidad.html" target="_blank">
+									Políticas de privacidad
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="" data-toggle="modal" data-target=".modalLibroReclamaciones">
+									Libro de reclamaciones
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<ul class="list-group-footer">
+							<li class="list-group-item">
+								<h2>¿Tienes alguna duda?</h2>
+							</li>
+							<li class="list-group-item">
+								Escríbenos al<br>
+								whatsapp: 992 192 643<br>
+								Correo: hola@bee.com.pe<br>
+							</li>
+							<li class="list-group-item">
+								o llámanos al<br>
+								(+51)01 4949335
+							</li>
+							<li class="list-group-item">
+								Lunes a Viernes: 9:00 am - 6:00 pm
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container-fluid">
+				<img src="img/logos/logoPoweredBee.png" alt="">
+			</div>
+		</div>
+	</footer>
+
+	<!-- MODALS -->
+
+	<!-- Modal contraseña olvidada-->
+	<div class="modal fade modal-bee modal-contra-olvidada" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="form-step1" id="form-step1">
+					<div class="modal-body">
+						<div class="header-modal-bee">
+							<!-- <img src="img/icons/isotipo-bee-fondo.png" alt=""> -->
+							<h5 class="modal-title" id="exampleModalScrollableTitle">
+								¿Olvidaste tu contraseña?
+							</h5>
+						</div>
+						<div class="content-modal-bee">
+							<p>
+								Ingresa  el correo electrónico con el que te registraste para
+								enviarte un enlace de recuperación
+							</p>
+
+						</div>
+						<div class="form-group">
+							<label for="inputEmail">Correo electrónico</label>
+							<input type="email" class="form-control" id="inputEmail">
+							<div class="invalid-feedback">
+								Correo inválido
+							</div>
+							<!-- <span class="text-help">Texto de ayuda</span> -->
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-primario" id="link-step2">
+							Enviar enlace
+						</a>
+					</div>
+				</div>
+				<div class="form-step2" id="form-step2">
+					<div class="modal-body">
+						<div class="header-modal-bee">
+							<!-- <img src="img/icons/isotipo-bee-fondo.png" alt=""> -->
+							<h5 class="modal-title" id="exampleModalScrollableTitle">
+								Enlace enviado
+							</h5>
+						</div>
+						<div class="content-modal-bee">
+							<p>
+								Te hemos enviado un enlace de recuperación a: <br>
+								<span class="overflow-email">
+									mfernanda@gmail.com
+								</span>
+							</p>
+
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-primario" id="link-step1" data-dismiss="modal">
+							Aceptar
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin modal contraseña olvidada-->
+
+	<!-- Modal contraseña correo No Confirmado-->
+	<div class="modal fade modal-bee modal-correoNoConfirmado" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="form-step1" id="form-step1">
+					<div class="modal-body">
+						<div class="header-modal-bee">
+							<!-- <img src="img/icons/isotipo-bee-fondo.png" alt=""> -->
+							<h5 class="modal-title" id="exampleModalScrollableTitle">
+								Aún no confirmas tu correo
+							</h5>
+						</div>
+						<div class="content-modal-bee">
+							<p>
+								Te hemos reenviado un correo de confirmación a <br>
+								<span class="overflow-email">
+									mfernanda@gmail.com
+								</span>
+							</p>
+						</div>
+
+					</div>
+					<div class="modal-footer modal-footer-link">
+						<a href="#" class="btn btn-primario" data-dismiss="modal" >
+							Aceptar
+						</a>
+						<div class="link-modal-footer">
+							¿Quieres cambiar tu correo?
+							<a href="cambiarCorreo.html" class="btn btn-link" target="_blank" >
+								Cambia tu correo aquí
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin modal contraseña correo No Confirmado-->
+
+	<!-- Modal Acerca de Bee-->
+	<div class="modal fade modal-bee modal-acercaDeBee" id="modal-acercaDeBee" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="form-step1">
+					<div class="modal-body">
+						<div class="header-modal-bee">
+							<!-- <img src="img/icons/isotipo-bee-fondo.png" alt=""> -->
+							<h5 class="modal-title" id="exampleModalScrollableTitle">
+								Acerca de Bee
+							</h5>
+							<div class="content-modal-bee">
+								<p>
+									bee acompaña tus propósitos creando e impulsando soluciones
+									creativas para atender las necesidades de sus clientes,
+									corporativos o finales, brindándoles plataformas digitales
+									que les permitan obtener beneficios, a través de alianzas con
+									otras empresas, integrándolas y acompañándolas en el logro de su visión.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin modal Acerca de Bee-->
+
+	<!-- Modal Sobre BeeBeneficios-->
+	<div class="modal fade modal-bee modal-sobreBeeBeneficios" id="modal-acercaDeBee" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="form-step1">
+					<div class="modal-body">
+						<div class="header-modal-bee">
+							<!-- <img src="img/icons/isotipo-bee-fondo.png" alt=""> -->
+							<h5 class="modal-title" id="exampleModalScrollableTitle">
+								Sobre BeeBeneficios
+							</h5>
+							<div class="content-modal-bee">
+								<p>
+									Es una programa que atiende a empresas y sus trabajadores a
+									través de activaciones presenciales con visitas "in house" y
+									digitales a través de una plataforma digital. Acercamos las
+									marcas a clientes potenciales a través de nuestra plataforma y
+									generamos interacción con ellos con el apoyo de las áreas de gestión humana.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin modal Sobre BeeBeneficios-->
+
+
+
+	<!--   Bootstrap JS Files   -->
+	<script src="js/bootstrap/jquery.3.2.1.min.js"></script>
+	<script src="js/bootstrap/popper.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/login.js"></script>
+
+</body>
+
+</html>
