@@ -1,3 +1,39 @@
+:root {
+    --white: #FFFFFF;
+    --gray1: #FAFAFA;
+    --gray2: #F2F2F2;
+    --gray3: #E6E6E6;
+    --gray4: #B3B3B3;
+    --gray5: #808080;
+    --gray6: #404040;
+    --gray7: #241D0F;
+    --primary1: #FFFFF5;
+    --primary2: #FFF9DE;
+    --primary3: #FFF1B4;
+    --primary4: #FFE578;
+    --primary5: #FFCE00;
+    --primary6: #FFBF00;
+    --primary7: #CFA40A;
+    --blue1: #EFF5FF;
+    --blue2: #E0ECFF;
+    --blue3: #BAD5FF;
+    --blue4: #6DA7FF;
+    --blue5: #0D6EFF;
+    --blue6: #0C408D;
+    --green1: #EBF6F3;
+    --green2: #C5EAE0;
+    --green3: #9BDAC9;
+    --green4: #60C6AA;
+    --green5: #00966D;
+    --green6: #016147;
+    --red1: #FDF4F4;
+    --red2: #F9E6E6;
+    --red3: #F9C4C5;
+    --red4: #F59799;
+    --red5: #F64B4F;
+    --red6: #AB2328;
+}
+
 .main-login {
     min-width: 100vw;
     min-height: 100vh;
@@ -8,4 +44,55 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.container-login {
+    /* background-color: pink; */
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+.card-login {
+    background-color: var(--white);
+    padding: 1.5rem;
+    width: 20rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.container-logo-login {
+    /* background-color: pink; */
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-logo-login img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.card-login h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.form-login .btn {
+    width: 100%;
 }
