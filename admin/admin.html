@@ -31,7 +31,7 @@
         <div class="wrap-sidebar-admin">
             <ul class="sidebar-admin-list">
                 <div class="wrap-brand-logo">
-                    
+
                     <img src="../img/logos/logo.png" alt="">
                 </div>
 
@@ -59,7 +59,7 @@
         </div>
 
         <div class="admin-panel">
-            
+
             <div class="panel active-panel" id="dashboard-panel">
                 <nav class="navbar-panel">
                     <div class="navbar-panel__title">
@@ -373,7 +373,7 @@
                             </button>
                         </div>
 
-                        
+
                     </div>
                 </div>
             </div>
@@ -407,25 +407,23 @@
                 </nav>
 
                 <div class="navbar-actions">
-                    <div class="navbar-actions__right">
-                        <div class="navbar-actions__filtros d-none">
-                            <div class="input-group input-icon">
-                                <span class="material-symbols-outlined">
-                                    search
-                                </span>
-                                <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar"
-                                    aria-describedby="addon-wrapping">
-                            </div>
-                        </div>
+                    <div class="navbar-actions__left">
+                        <button type="button" class="btn outline-btn btn-icon" data-bs-toggle="modal"
+                            data-bs-target="#modalFiltrarPedidos">
+                            <span class="material-symbols-outlined">
+                                tune
+                            </span>
+                            Filtrar
+                        </button>
+                    </div>
 
-                        <div class="navbar-actions__new">
-                            <button type="button" class="btn primary-btn showAdminPanel-contactoNuevo">
-                                <span class="material-symbols-outlined">
-                                    add
-                                </span>
-                                Nuevo contacto
-                            </button>
-                        </div>
+                    <div class="navbar-actions__right">
+                        <button type="button" class="btn primary-btn showAdminPanel-contactoNuevo">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                            Nuevo
+                        </button>
                     </div>
                 </div>
 
@@ -461,7 +459,7 @@
                                             edit
                                         </span>
                                     </button>
-    
+
                                     <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
                                         data-bs-target="#modalEliminarContacto">
                                         <span class="material-symbols-outlined">
@@ -490,7 +488,7 @@
                                             edit
                                         </span>
                                     </button>
-    
+
                                     <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
                                         data-bs-target="#modalEliminarContacto">
                                         <span class="material-symbols-outlined">
@@ -616,7 +614,7 @@
                 </div>
             </div>
 
-            
+
         </div>
     </div>
 
@@ -626,54 +624,65 @@
         <span>Los productos se están cargando...</span>
     </div>
     <!-- END LOADER -->
-    
-    
+
+
     <!-- MODALS -->
-   
-    <!-- Modal filtrar colaboradores-->
-    <div class="modal fade" id="modalColaboradoresFiltros" tabindex="-1" aria-labelledby="colaboradoresFiltrar"
+
+    <!-- Modal editar contactos-->
+    <div class="modal fade" id="modalFiltrarPedidos" tabindex="-1" aria-labelledby="colaboradoresFiltrar"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-
+                    <h5 class="modal-title" id="colaboradoresFiltrar">Filtrar pedidos</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h5 class="modal-title" id="colaboradoresFiltrar">Filtrar</h5>
 
                     <form class="form-modal">
+                        
+
                         <div class="mb-form form-group">
-                            <label for="colaboradoresFiltrarEstado" class="form-label">Estado</label>
-                            <select class="form-select" aria-label="Default select example"
-                                id="colaboradoresFiltrarEstado">
+                            <label for="filtrarPedidosTipoPago" class="form-label">Tipo de pago</label>
+                            <select class="form-select" aria-label="Default select example" id="filtrarPedidosTipoPago">
                                 <option selected>Seleccione</option>
-                                <option value="1">Activo</option>
-                                <option value="2">Inactivo</option>
-                                <option value="3">Pre-registrado</option>
+                                <option value="1">Yape</option>
+                                <option value="2">Plin</option>
                             </select>
                         </div>
 
                         <div class="mb-form form-group">
-                            <label for="colaboradoresFiltrarSede" class="form-label">Sede</label>
-                            <select class="form-select" aria-label="Default select example"
-                                id="colaboradoresFiltrarSede">
+                            <label for="filtrarPedidosTipoEstado" class="form-label">Estado</label>
+                            <select class="form-select" aria-label="Default select example" id="filtrarPedidosTipoEstado">
                                 <option selected>Seleccione</option>
-                                <option value="1">Lince</option>
-                                <option value="2">Miraflores</option>
-                                <option value="3">San Miguel</option>
+                                <option value="1">Yape</option>
+                                <option value="2">Plin</option>
                             </select>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="mb-form form-group col">
+                                <label for="filtrarPedidosFechaInicio" class="form-label">Fecha inicio</label>
+                                <input type="date" class="form-control" id="filtrarPedidosFechaInicio">
+                                <div class="text-help">Ingrese una fecha válida</div>
+                            </div>
+
+                            <div class="mb-form form-group col">
+                                <label for="filtrarPedidosFechaFin" class="form-label">Fecha fin</label>
+                                <input type="date" class="form-control" id="filtrarPedidosFechaFin">
+                                <div class="text-help">Ingrese una fecha válida</div>
+                            </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn primary-btn">Aplicar filtros</button>
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Filtrar</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Modal filtrar colaboradores-->
+    <!-- End Modal editar contactos-->
 
     <!-- Modal editar contactos-->
     <div class="modal fade" id="modalEditarContacto" tabindex="-1" aria-labelledby="colaboradoresFiltrar"
@@ -778,7 +787,7 @@
     </div>
     <!-- End Modal eliminar contacto-->
 
-    
+
 
     <!-- END MODALS -->
 

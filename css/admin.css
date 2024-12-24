@@ -1035,7 +1035,7 @@ input[type=number] {
 
 .modal-footer {
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 .form-modal {
