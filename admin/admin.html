@@ -463,7 +463,7 @@
                                     </button>
 
                                     <button type="button" class="btn ghost-btn btn-icon" data-bs-toggle="modal"
-                                        data-bs-target="#modalEnviarPedidos">
+                                        data-bs-target="#modalEnviarPedido">
                                         <span class="material-symbols-outlined">
                                             send
                                         </span>
@@ -727,6 +727,57 @@
         </div>
     </div>
     <!-- End Modal descargar codigos-->
+
+    <!-- Modal enviar pedido-->
+    <div class="modal fade" id="modalEnviarPedido" tabindex="-1" aria-labelledby="pedidosDescargarCodigos"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pedidosDescargarCodigos">Enviar pedido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Tipo de descarga</label>
+                            <div class="radios">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="tipoEnvioPedido"
+                                        id="tipoEnvioPedido1" checked>
+                                    <label class="form-check-label" for="tipoEnvioPedido1">
+                                        Individual
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="tipoEnvioPedido"
+                                        id="tipoEnvioPedido2">
+                                    <label class="form-check-label" for="tipoEnvioPedido2">
+                                        Masivo
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-envioIndividual" id="pedidoEnvioIndividual">
+                            Envio individual
+                        </div>
+
+                        <div class="content-envioMasivo" id="pedidoEnvioMasivo">
+                            Envio masivo
+                        </div>
+                    </form>
+
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Descargar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal enviar pedido-->
 
     <!-- Modal editar contactos-->
     <div class="modal fade" id="modalEditarContacto" tabindex="-1" aria-labelledby="colaboradoresFiltrar"

@@ -2895,5 +2895,10 @@ figure figcaption {
 
 /* MODULOS MONTALVO */
 
+/* Pedidos */
+.content-envioMasivo {
+    display: none;
+}
+/* End pedidos */
 /* END MODULOS MONTALVO */
 

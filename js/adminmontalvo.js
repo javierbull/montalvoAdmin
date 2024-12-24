@@ -45,6 +45,24 @@ $(document).ready(function () {
     });
     // End sidebar item active
 
+    // Show tipo envio de pedidos
+    $("input[name='tipoEnvioPedido']").click(function () {
+        if ($("#tipoEnvioPedido1").is(":checked")) {
+            $("#pedidoEnvioIndividual").show();
+        } else {
+            $("#pedidoEnvioIndividual").hide();
+        }
+    });
+
+    $("input[name='tipoEnvioPedido']").click(function () {
+        if ($("#tipoEnvioPedido2").is(":checked")) {
+            $("#pedidoEnvioMasivo").show();
+        } else {
+            $("#pedidoEnvioMasivo").hide();
+        }
+    });
+    //   End Show tipo envio de pedidos
+
     // Shoe paneld admin
     $(".showAdminPanel-dashboard").click(function () {
         $("#dashboard-panel").show();
