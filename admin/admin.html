@@ -731,7 +731,7 @@
     <!-- Modal enviar pedido-->
     <div class="modal fade" id="modalEnviarPedido" tabindex="-1" aria-labelledby="pedidosDescargarCodigos"
         aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="pedidosDescargarCodigos">Enviar pedido</h5>
@@ -739,7 +739,7 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="form-group">
+                        <div class="form-group mb-2">
                             <label>Tipo de descarga</label>
                             <div class="radios">
                                 <div class="form-check form-check-inline">
@@ -760,7 +760,52 @@
                         </div>
                         
                         <div class="content-envioIndividual" id="pedidoEnvioIndividual">
-                            Envio individual
+                            <div class="step-form-title">
+                                <h6>Datos del cliente</h6>
+                            </div>
+
+                            <div class="row g-3">
+                                <div class="mb-form form-group col">
+                                    <label for="pedidoEnvioIndividualNombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="pedidoEnvioIndividualNombre" value="María Torres Soto" disabled>
+                                    <div class="text-help">Ingrese un nombre válido</div>
+                                </div>
+
+                                <div class="mb-form form-group col">
+                                    <label for="pedidoEnvioIndividualCorreo" class="form-label">Correo corporativo</label>
+                                    <input type="email" class="form-control" id="pedidoEnvioIndividualCorreo" value="mariatorressoto@gmail.com" disabled>
+                                    <div class="text-help">Ingrese un correo válido</div>
+                                </div>
+                            </div>
+
+                            <div class="step-form-title">
+                                <h6>Detalle del pedido</h6>
+                            </div>
+                            <table class="table align-middle table-admin">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Corte de cabello dama</td>
+                                        <td>10</td>
+                                        <td>S/ 100.00</td>
+                                        <td>S/ 1000.00</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr><td colspan="3"></td>
+                                    <td>Total</td>
+                                    <td>S/ 1000.00</td>
+                                </tr></tfoot>
+                            </table>
                         </div>
 
                         <div class="content-envioMasivo" id="pedidoEnvioMasivo">
