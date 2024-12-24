@@ -31,7 +31,6 @@
         <div class="wrap-sidebar-admin">
             <ul class="sidebar-admin-list">
                 <div class="wrap-brand-logo">
-
                     <img src="../img/logos/logo.png" alt="">
                 </div>
 
@@ -49,9 +48,9 @@
                     <button class="btn sidebar-item-btn showAdminPanel-pedidos sidebar-item-db">
                         <div class="sidebar-item-btn-left">
                             <span class="material-symbols-outlined">
-                                account_box
+                                list_alt
                             </span>
-                            Colaboradores
+                            Pedidos
                         </div>
                     </button>
                 </li>
@@ -381,9 +380,9 @@
             <div class="panel" id="pedidos-panel">
                 <nav class="navbar-panel">
                     <div class="navbar-panel__title">
-                        <h2>Contactos</h2>
+                        <h2>Pedidos</h2>
                         <p>
-                            Gestiona la información de tus colaboradores.
+                            Gestiona los pedidos de tus clientes.
                         </p>
                     </div>
 
@@ -627,7 +626,7 @@
 
     <!-- MODALS -->
 
-    <!-- Modal editar contactos-->
+    <!-- Modal filtrar pedidos-->
     <div class="modal fade" id="modalFiltrarPedidos" tabindex="-1" aria-labelledby="colaboradoresFiltrar"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -681,7 +680,53 @@
             </div>
         </div>
     </div>
-    <!-- End Modal editar contactos-->
+    <!-- End Modal filtrar pedidos-->
+
+    <!-- Modal descargar códigos-->
+    <div class="modal fade" id="modalDescargarCodigos" tabindex="-1" aria-labelledby="pedidosDescargarCodigos"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pedidosDescargarCodigos">Descargar códigos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Tipo de descarga</label>
+                        <div class="radios">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="editarRadioTipoPerfil"
+                                    id="editarRadioTipoPerfil1" checked>
+                                <label class="form-check-label" for="editarRadioTipoPerfil1">
+                                    Excel
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="editarRadioTipoPerfil"
+                                    id="editarRadioTipoPerfil2">
+                                <label class="form-check-label" for="editarRadioTipoPerfil2">
+                                    PDF
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="editarRadioTipoPerfil"
+                                    id="editarRadioTipoPerfil3">
+                                <label class="form-check-label" for="editarRadioTipoPerfil3">
+                                    link
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Descargar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal descargar codigos-->
 
     <!-- Modal editar contactos-->
     <div class="modal fade" id="modalEditarContacto" tabindex="-1" aria-labelledby="colaboradoresFiltrar"
