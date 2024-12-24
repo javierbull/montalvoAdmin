@@ -34,6 +34,24 @@
     --red6: #AB2328;
 }
 
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    color: var(--gray7);
+    font-weight: 400;
+}
+
 .main-login {
     min-width: 100vw;
     min-height: 100vh;
@@ -112,11 +130,6 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: var(--gray7);
 }
 
-/* .toggle-password {
-    float: right;
-    cursor: pointer;
-    margin-right: 10px;
-    margin-top: -25px;
-} */
