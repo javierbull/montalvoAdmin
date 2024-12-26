@@ -170,14 +170,14 @@ body {
 }
 
 .danger-btn:hover {
-    background-color: var(--red4);
+    background-color: var(--red6);
     color: var(--white);
-    border: solid 1px var(--red4);
+    border: solid 1px var(--red6);
 }
 
 .danger-btn:focus {
     color: var(--white);
-    background-color: var(--red6);
+    background-color: var(--red5);
     border: solid 1px var(--red6);
     box-shadow: 0px 0px 0px 2px rgba(239, 46, 85, 0.5);
 }
@@ -2922,6 +2922,13 @@ figure figcaption {
 
 .content-fluid .headline2 {
     text-align: center;
+}
+
+.row-add-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 1rem;
 }
 /* End pedidos */
 /* END MODULOS MONTALVO */

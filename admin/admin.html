@@ -600,8 +600,8 @@
                             <label class="form-check-label" for="nuevoPedidoGenerarCodigos">Generar códigos</label>
                         </div>
 
-                        <div class="row-add-product g-3">
-                            <div class="mb-form form-group col">
+                        <div class="row-add-product">
+                            <div class="mb-form form-group col-sm-3">
                                 <label for="nuevoPedidoProducto" class="form-label">Producto</label>
                                 <select class="form-select" aria-label="Default select" id="nuevoPedidoProducto">
                                     <option selected>Buscar</option>
@@ -641,14 +641,60 @@
                                 <div class="text-help">Ingrese una cantidad</div>
                             </div>
 
-                            <button class="btn btn-icon accent-btn">
+                            <button class="btn btn-icon accent-btn mb-form">
                                 <span class="material-symbols-outlined">
                                     add
                                 </span>
                             </button>
                         </div>
                         
+                        <div class="row-add-product">
+                            <div class="mb-form form-group col-sm-3">
+                                <label for="nuevoPedidoProducto" class="form-label">Producto</label>
+                                <select class="form-select" aria-label="Default select" id="nuevoPedidoProducto">
+                                    <option >Buscar</option>
+                                    <option selected value="1">Shampoo</option>
+                                    <option value="2">Acondicionador</option>
+                                </select>
+                                <div class="text-help">Seleccione una opción</div>
+                            </div>
 
+                            <div class="mb-form form-group col">
+                                <label for="nuevoPedidoCantidad" class="form-label">Cantidad</label>
+                                <input type="number" class="form-control" id="nuevoPedidoCantidad" value="1">
+                                <div class="text-help">Ingrese una cantidad</div>
+                            </div>
+
+                            <div class="mb-form form-group col">
+                                <label for="nuevoPedidoFechaInicio" class="form-label">Fecha de inicio</label>
+                                <input type="date" class="form-control" id="nuevoPedidoFechaInicio" value="2024-10-10">
+                                <div class="text-help">Ingrese una fecha</div>
+                            </div>
+
+                            <div class="mb-form form-group col">
+                                <label for="nuevoPedidoFechaFin" class="form-label">Fecha de fin</label>
+                                <input type="date" class="form-control" id="nuevoPedidoFechaFin" value="2025-04-10">
+                                <div class="text-help">Ingrese una fecha</div>
+                            </div>
+
+                            <div class="mb-form form-group col">
+                                <label for="nuevoPedidoPrecio" class="form-label">Precio</label>
+                                <input type="number" class="form-control" id="nuevoPedidoPrecio" value="100.00">
+                                <div class="text-help">Ingrese una cantidad</div>
+                            </div>
+
+                            <div class="mb-form form-group col">
+                                <label for="nuevoPedidoSubtotal" class="form-label">Subtotal</label>
+                                <input type="number" class="form-control" id="nuevoPedidoSubtotal" value="100.00" disabled>
+                                <div class="text-help">Ingrese una cantidad</div>
+                            </div>
+
+                            <button class="btn btn-icon danger-btn mb-form">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </button>
+                        </div>
                         
 
                         <div class="form-actions-right">
