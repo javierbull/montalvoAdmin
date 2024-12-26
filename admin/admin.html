@@ -809,7 +809,60 @@
                         </div>
 
                         <div class="content-envioMasivo" id="pedidoEnvioMasivo">
-                            Envio masivo
+                            <div class="step-form-title">
+                                <h6>Detalle del pedido</h6>
+                            </div>
+                            <table class="table align-middle table-admin">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Corte de cabello dama</td>
+                                        <td>10</td>
+                                        <td>S/ 100.00</td>
+                                        <td>S/ 1000.00</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr><td colspan="3"></td>
+                                    <td>Total</td>
+                                    <td>S/ 1000.00</td>
+                                </tr></tfoot>
+                            </table>
+                            <p>
+                                Descarga el archivo XLSX con el formato para la asignación masiva de vales a tus colaboradores.
+                            </p>
+                            <button class="btn outline-btn mb-form">
+                                <span class="material-symbols-outlined">
+                                    download
+                                </span>
+                                Descargar formato
+                            </button>
+                            <div id="theWidget" class="dnd-file-upload-widget">
+                                <div class="form-group drop_zone">
+                                    <label class="btn outline-btn">
+                                        <span class="material-symbols-outlined icon-fill">
+                                            upload_2
+                                        </span>
+                                        Sube tu archivo
+                                        <input type="file" multiple="" />
+                                    </label>
+                                    <span class="drop_zone--text">o arrastra y suelta tu archivo aquí</span>
+                                    <span class="drop_zone--sizeFile">El tamaño máximo del archivo debe ser 10
+                                        MB.</span>
+                                </div>
+
+                                <div class="files-container"></div>
+                            </div>
+
                         </div>
                     </form>
 
