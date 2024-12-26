@@ -417,7 +417,7 @@
                     </div>
 
                     <div class="navbar-actions__right">
-                        <button type="button" class="btn primary-btn showAdminPanel-contactoNuevo">
+                        <button type="button" class="btn primary-btn showAdminPanel-nuevoPedido">
                             <span class="material-symbols-outlined">
                                 add
                             </span>
@@ -503,9 +503,9 @@
             <div class="panel" id="nuevoPedido-panel">
                 <nav class="navbar-panel">
                     <div class="navbar-panel__title">
-                        <h2>Contactos</h2>
+                        <h2>Pedidos</h2>
                         <p>
-                            Gestiona la información de tu empresa.
+                            Gestiona los pedidos de tus clientes.
                         </p>
                     </div>
 
@@ -528,78 +528,128 @@
                 </nav>
 
                 <div class="navbar-actions">
-                    <button type="button" class="btn outline-btn btn-icon showAdminPanel-contactos">
+                    <button type="button" class="btn outline-btn btn-icon showAdminPanel-pedidos">
                         <span class="material-symbols-outlined">
                             arrow_back
                         </span>
                     </button>
                 </div>
 
-                <div class="colaboradorNuevo-main">
+                <div class="content-fluid">
                     <h2 class="headline2">
-                        Nuevo contacto
+                        Nuevo pedido
                     </h2>
 
-                    <form class="form-admin">
-                        <div class="mb-form">
-                            <label for="nuevoColaboradorNombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nuevoColaboradorNombre">
-                            <div class="text-help">Ingrese un nombre válido</div>
-                        </div>
-
-                        <div class="mb-form">
-                            <label for="nuevoColaboradorApellidoPaterno" class="form-label">Apellido paterno</label>
-                            <input type="text" class="form-control" id="nuevoColaboradorApellidoPaterno">
-                            <div class="text-help">Ingrese un apellido válido</div>
-                        </div>
-
-                        <div class="mb-form">
-                            <label for="nuevoColaboradorApellidoMaterno" class="form-label">Apellido materno</label>
-                            <input type="text" class="form-control" id="nuevoColaboradorApellidoMaterno">
-                            <div class="text-help">Ingrese un apellido válido</div>
-                        </div>
-
-                        <div class="mb-form">
-                            <label for="nuevoColaboradorCargo" class="form-label">Cargo</label>
-                            <input type="text" class="form-control" id="nuevoColaboradorCargo">
-                            <div class="text-help">Ingrese un cargo válido</div>
-                        </div>
-
+                    <form class="form-admin-fluid">
                         <div class="row g-3">
-                            <div class="mb-form form-group col">
-                                <label for="nuevoColaboradorTipoContacto" class="form-label">Tipo de contacto</label>
-                                <select class="form-select" aria-label="Default select example"
-                                    id="nuevoColaboradorTipoContacto">
+                            <div class="mb-form form-group col-sm-3">
+                                <label for="nuevoPedidoTipoComprobante" class="form-label">Tipo de comprobante</label>
+                                <select class="form-select" aria-label="Default select"
+                                    id="nuevoPedidoTipoComprobante">
                                     <option selected>Seleccione</option>
-                                    <option value="1">Principal</option>
-                                    <option value="2">Secundario</option>
+                                    <option value="1">Boleta</option>
+                                    <option value="2">Factura</option>
                                 </select>
+                                <div class="text-help">Seleccione una opción</div>
                             </div>
 
-                            <div class="mb-form form-group col">
-                                <label for="nuevoColaboradorSede" class="form-label">Sede</label>
-                                <select class="form-select" aria-label="Default select example"
-                                    id="nuevoColaboradorSede">
-                                    <option selected>Seleccione</option>
-                                    <option value="1">Miraflores</option>
-                                    <option value="2">Lince</option>
-                                </select>
+                            <div class="mb-form form-group col-sm-3">
+                                <label for="nuevoPedidoSerie" class="form-label">Serie</label>
+                                <input type="text" class="form-control" id="nuevoPedidoSerie">
+                                <div class="text-help">Ingrese un dato válido</div>
+                            </div>
+
+                            <div class="mb-form form-group col-sm-6">
+                                <label for="nuevoPedidoCorrelativo" class="form-label">Correlativo</label>
+                                <input type="text" class="form-control" id="nuevoPedidoCorrelativo">
+                                <div class="text-help">Ingrese un dato válido</div>
                             </div>
                         </div>
 
                         <div class="row g-3">
+                            <div class="mb-form form-group col-sm-3">
+                                <label for="nuevoPedidoTipoDoc" class="form-label">Tipo de documento</label>
+                                <select class="form-select" aria-label="Default select"
+                                    id="nuevoPedidoTipoDoc">
+                                    <option selected>Seleccione</option>
+                                    <option value="1">DNI</option>
+                                    <option value="2">CE</option>
+                                </select>
+                                <div class="text-help">Seleccione una opción</div>
+                            </div>
+
+                            <div class="mb-form form-group col-sm-3">
+                                <label for="nuevoPedidoNumeroDoc" class="form-label">Número de documento</label>
+                                <input type="text" class="form-control" id="nuevoPedidoNumeroDoc">
+                                <div class="text-help">Ingrese un dato válido</div>
+                            </div>
+
+                            <div class="mb-form form-group col-sm-6">
+                                <label for="nuevoPedidoCliente" class="form-label">Nombre del cliente</label>
+                                <input type="text" class="form-control" id="nuevoPedidoCliente">
+                                <div class="text-help">Ingrese un dato válido</div>
+                            </div>
+                        </div>
+
+                        <div class="step-form-title mb-form">
+                            <h6>Agregar productos</h6>
+                        </div>
+
+                        <div class="form-check form-switch custom-switch mb-form">
+                            <input class="form-check-input" type="checkbox" role="switch" id="nuevoPedidoGenerarCodigos">
+                            <label class="form-check-label" for="nuevoPedidoGenerarCodigos">Generar códigos</label>
+                        </div>
+
+                        <div class="row-add-product g-3">
                             <div class="mb-form form-group col">
-                                <label for="nuevoColaboradorCorreoCorp" class="form-label">Correo corporativo</label>
-                                <input type="email" class="form-control" id="nuevoColaboradorCorreoCorp">
-                                <div class="text-help">Ingrese un correo válido</div>
+                                <label for="nuevoPedidoProducto" class="form-label">Producto</label>
+                                <select class="form-select" aria-label="Default select" id="nuevoPedidoProducto">
+                                    <option selected>Buscar</option>
+                                    <option value="1">DNI</option>
+                                    <option value="2">CE</option>
+                                </select>
+                                <div class="text-help">Seleccione una opción</div>
                             </div>
 
                             <div class="mb-form form-group col">
-                                <label for="nuevoColaboradorCelular" class="form-label">Celular</label>
-                                <input type="number" class="form-control" id="nuevoColaboradorCelular">
-                                <div class="text-help">Ingrese un número válido</div>
+                                <label for="nuevoPedidoCantidad" class="form-label">Cantidad</label>
+                                <input type="number" class="form-control" id="nuevoPedidoCantidad">
+                                <div class="text-help">Ingrese una cantidad</div>
                             </div>
+
+                            <div class="mb-form form-group col">
+                                <label for="nuevoPedidoFechaInicio" class="form-label">Fecha de inicio</label>
+                                <input type="date" class="form-control" id="nuevoPedidoFechaInicio">
+                                <div class="text-help">Ingrese una fecha</div>
+                            </div>
+
+                            <div class="mb-form form-group col">
+                                <label for="nuevoPedidoFechaFin" class="form-label">Fecha de fin</label>
+                                <input type="date" class="form-control" id="nuevoPedidoFechaFin">
+                                <div class="text-help">Ingrese una fecha</div>
+                            </div>
+
+                            <div class="mb-form form-group col">
+                                <label for="nuevoPedidoPrecio" class="form-label">Precio</label>
+                                <input type="number" class="form-control" id="nuevoPedidoPrecio">
+                                <div class="text-help">Ingrese una cantidad</div>
+                            </div>
+
+                            <div class="mb-form form-group col">
+                                <label for="nuevoPedidoSubtotal" class="form-label">Subtotal</label>
+                                <input type="number" class="form-control" id="nuevoPedidoSubtotal" disabled>
+                                <div class="text-help">Ingrese una cantidad</div>
+                            </div>
+
+                            <button class="btn btn-icon accent-btn">
+                                <span class="material-symbols-outlined">
+                                    add
+                                </span>
+                            </button>
                         </div>
+                        
+
+                        
 
                         <div class="form-actions-right">
                             <button type="button" class="btn primary-btn">

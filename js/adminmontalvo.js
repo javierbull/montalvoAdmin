@@ -63,7 +63,7 @@ $(document).ready(function () {
     });
     //   End Show tipo envio de pedidos
 
-    // Shoe paneld admin
+    // Show panels admin
     $(".showAdminPanel-dashboard").click(function () {
         $("#dashboard-panel").show();
         $("#pedidos-panel").hide();
@@ -76,5 +76,11 @@ $(document).ready(function () {
         $("#nuevoPedido-panel").hide();
     });
 
+    $(".showAdminPanel-nuevoPedido").click(function () {
+        $("#dashboard-panel").hide();
+        $("#pedidos-panel").hide();
+        $("#nuevoPedido-panel").show();
+    });
+    // End show panels admin
 
 });
