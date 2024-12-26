@@ -1344,6 +1344,7 @@ table.dataTable {
     display: flex;
     justify-content: flex-end;
     padding-top: 1.5rem;
+    gap: 1rem;
 }
 
 .form-actions-between {
