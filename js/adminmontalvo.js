@@ -63,26 +63,7 @@ $(document).ready(function () {
     });
     //   End Show tipo envio de pedidos
 
-    // Show panels admin
-    $(".showAdminPanel-dashboard").click(function () {
-        $("#dashboard-panel").show();
-        $("#pedidos-panel").hide();
-        $("#nuevoPedido-panel").hide();
-    });
-
-    $(".showAdminPanel-pedidos").click(function () {
-        $("#dashboard-panel").hide();
-        $("#pedidos-panel").show();
-        $("#nuevoPedido-panel").hide();
-    });
-
-    $(".showAdminPanel-nuevoPedido").click(function () {
-        $("#dashboard-panel").hide();
-        $("#pedidos-panel").hide();
-        $("#nuevoPedido-panel").show();
-    });
-    // End show panels admin
-
+    // Select2
     $('.select2').each(function () {
         $(this).select2({
             theme: 'bootstrap-5',
@@ -91,5 +72,38 @@ $(document).ready(function () {
             dropdownParent: $(this).parent()
         });
     });
+    // End select2
+
+    // Show panels admin
+    $(".showAdminPanel-dashboard").click(function () {
+        $("#dashboard-panel").show();
+        $("#pedidos-panel").hide();
+        $("#nuevoPedido-panel").hide();
+        $("#giftcard-panel").hide();
+    });
+
+    $(".showAdminPanel-pedidos").click(function () {
+        $("#dashboard-panel").hide();
+        $("#pedidos-panel").show();
+        $("#nuevoPedido-panel").hide();
+        $("#giftcard-panel").hide();
+    });
+
+    $(".showAdminPanel-nuevoPedido").click(function () {
+        $("#dashboard-panel").hide();
+        $("#pedidos-panel").hide();
+        $("#nuevoPedido-panel").show();
+        $("#giftcard-panel").hide();
+    });
+
+    $(".showAdminPanel-giftcard").click(function () {
+        $("#dashboard-panel").hide();
+        $("#pedidos-panel").hide();
+        $("#nuevoPedido-panel").hide();
+        $("#giftcard-panel").show();
+    });
+    // End show panels admin
+
+    
 
 });

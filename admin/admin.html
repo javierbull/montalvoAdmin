@@ -54,6 +54,16 @@
                         </div>
                     </button>
                 </li>
+                <li class="sidebar-item">
+                    <button class="btn sidebar-item-btn showAdminPanel-giftcard sidebar-item-db">
+                        <div class="sidebar-item-btn-left">
+                            <span class="material-symbols-outlined">
+                                redeem
+                            </span>
+                            Gift Cards
+                        </div>
+                    </button>
+                </li>
             </ul>
         </div>
 
@@ -746,12 +756,114 @@
                             </button>
                         </div>
                     </form>
-
-
                 </div>
             </div>
 
+            <div class="panel" id="giftcard-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Canjes de Gift cards</h2>
+                        <p>
+                            Gestiona los canjes de tu empresa.
+                        </p>
+                    </div>
 
+                    <div class="wrap-switch-btn-perfil">
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/perfil.png" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+
+                <div class="content-admin">
+                    <div class="content-admin-header">
+                        <h2 class="headline2">
+                            Canjear Gift card
+                        </h2>
+                        <p>
+                            Aquí podrás verificar y canjear los códigos que nuestros clientes hayan comprado.
+                        </p>
+                    </div>
+
+                    <div class="content-row-add-product mb-form">
+                        <div class="row-add-product">
+                            <div class="form-group col">
+                                <label for="nuevoCanjeGiftcard" class="form-label">Código</label>
+                                <input type="text" class="form-control" id="nuevoCanjeGiftcard">
+                            </div>
+
+                            <button class="btn accent-btn">
+                                Verificar
+                            </button>
+                        </div>
+                        <p class="text-help-row">
+                            Datos incorrectos, por favor intenete de nuevo.
+                        </p>
+                    </div>
+
+                    <div class="content-canje">
+                        <div class="card-canje">
+                            <p class="card-canje-label">
+                                Boleta de venta
+                            </p>
+                            <p class="card-canje-name">
+                                BPBM-00000035
+                            </p>
+                        </div>
+
+                        <div class="card-canje">
+                            <p class="card-canje-label">
+                                Gift card
+                            </p>
+                            <p class="card-canje-name">
+                                Gift card 100
+                            </p>
+                            <p class="card-canje-desc">
+                                Saldo actual: S/ 80.00
+                            </p>
+                        </div>
+
+                        <p class="card-canje-desc">
+                            Consumos
+                        </p>
+                        <table class="table align-middle table-admin">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Local</th>
+                                    <th scope="col">Consumo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>10/10/2024</td>
+                                    <td>Montalvo Benavides</td>
+                                    <td>S/ 20.00</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td colspan="2"></td>
+                                <td>Consumo total</td>
+                                <td>S/ 20.00</td>
+                            </tr></tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
