@@ -600,100 +600,98 @@
                             <label class="form-check-label" for="nuevoPedidoGenerarCodigos">Generar códigos</label>
                         </div>
 
-                        <div class="row-add-product">
-                            <div class="mb-form form-group col-sm-3">
-                                <label for="nuevoPedidoProducto" class="form-label">Producto</label>
-                                <select class="form-select" aria-label="Default select" id="nuevoPedidoProducto">
-                                    <option selected>Buscar</option>
-                                    <option value="1">DNI</option>
-                                    <option value="2">CE</option>
-                                </select>
-                                <div class="text-help">Seleccione una opción</div>
+                        <div class="content-row-add-product mb-form">
+                            <div class="row-add-product">
+                                <div class="form-group col-sm-3">
+                                    <label for="nuevoPedidoProducto" class="form-label">Producto</label>
+                                    <select class="form-select" aria-label="Default select" id="nuevoPedidoProducto">
+                                        <option selected>Buscar</option>
+                                        <option value="1">DNI</option>
+                                        <option value="2">CE</option>
+                                    </select>
+                                </div>
+    
+                                <div class="form-group col">
+                                    <label for="nuevoPedidoCantidad" class="form-label">Cantidad</label>
+                                    <input type="number" class="form-control" id="nuevoPedidoCantidad">
+                                </div>
+    
+                                <div class="form-group col">
+                                    <label for="nuevoPedidoFechaInicio" class="form-label">Fecha de inicio</label>
+                                    <input type="date" class="form-control" id="nuevoPedidoFechaInicio">
+                                </div>
+    
+                                <div class="form-group col">
+                                    <label for="nuevoPedidoFechaFin" class="form-label">Fecha de fin</label>
+                                    <input type="date" class="form-control" id="nuevoPedidoFechaFin">
+                                </div>
+    
+                                <div class="form-group col">
+                                    <label for="nuevoPedidoPrecio" class="form-label">Precio</label>
+                                    <input type="number" class="form-control" id="nuevoPedidoPrecio">
+                                </div>
+    
+                                <div class="form-group col">
+                                    <label for="nuevoPedidoSubtotal" class="form-label">Subtotal</label>
+                                    <input type="number" class="form-control" id="nuevoPedidoSubtotal" disabled>
+                                </div>
+    
+                                <button class="btn btn-icon accent-btn">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </button>
                             </div>
-
-                            <div class="mb-form form-group col">
-                                <label for="nuevoPedidoCantidad" class="form-label">Cantidad</label>
-                                <input type="number" class="form-control" id="nuevoPedidoCantidad">
-                                <div class="text-help">Ingrese una cantidad</div>
-                            </div>
-
-                            <div class="mb-form form-group col">
-                                <label for="nuevoPedidoFechaInicio" class="form-label">Fecha de inicio</label>
-                                <input type="date" class="form-control" id="nuevoPedidoFechaInicio">
-                                <div class="text-help">Ingrese una fecha</div>
-                            </div>
-
-                            <div class="mb-form form-group col">
-                                <label for="nuevoPedidoFechaFin" class="form-label">Fecha de fin</label>
-                                <input type="date" class="form-control" id="nuevoPedidoFechaFin">
-                                <div class="text-help">Ingrese una fecha</div>
-                            </div>
-
-                            <div class="mb-form form-group col">
-                                <label for="nuevoPedidoPrecio" class="form-label">Precio</label>
-                                <input type="number" class="form-control" id="nuevoPedidoPrecio">
-                                <div class="text-help">Ingrese una cantidad</div>
-                            </div>
-
-                            <div class="mb-form form-group col">
-                                <label for="nuevoPedidoSubtotal" class="form-label">Subtotal</label>
-                                <input type="number" class="form-control" id="nuevoPedidoSubtotal" disabled>
-                                <div class="text-help">Ingrese una cantidad</div>
-                            </div>
-
-                            <button class="btn btn-icon accent-btn mb-form">
-                                <span class="material-symbols-outlined">
-                                    add
-                                </span>
-                            </button>
+                            <p class="text-help-row">
+                                Datos incorrectos, por favor intenete de nuevo.
+                            </p>
                         </div>
                         
-                        <div class="row-add-product">
-                            <div class="mb-form form-group col-sm-3">
-                                <label for="nuevoPedidoProducto" class="form-label">Producto</label>
-                                <select class="form-select" aria-label="Default select" id="nuevoPedidoProducto">
-                                    <option >Buscar</option>
-                                    <option selected value="1">Shampoo</option>
-                                    <option value="2">Acondicionador</option>
-                                </select>
-                                <div class="text-help">Seleccione una opción</div>
+                        <div class="content-row-add-product mb-form">
+                            <div class="row-add-product">
+                                <div class="form-group col-sm-3">
+                                    <label for="nuevoPedidoProducto" class="form-label">Producto</label>
+                                    <select class="form-select" aria-label="Default select" id="nuevoPedidoProducto">
+                                        <option >Buscar</option>
+                                        <option selected value="1">Shampoo</option>
+                                        <option value="2">Acondicionador</option>
+                                    </select>
+                                </div>
+    
+                                <div class="form-group col">
+                                    <label for="nuevoPedidoCantidad" class="form-label">Cantidad</label>
+                                    <input type="number" class="form-control" id="nuevoPedidoCantidad" value="1">
+                                </div>
+    
+                                <div class="form-group col">
+                                    <label for="nuevoPedidoFechaInicio" class="form-label">Fecha de inicio</label>
+                                    <input type="date" class="form-control" id="nuevoPedidoFechaInicio" value="2024-10-10">
+                                </div>
+    
+                                <div class="form-group col">
+                                    <label for="nuevoPedidoFechaFin" class="form-label">Fecha de fin</label>
+                                    <input type="date" class="form-control" id="nuevoPedidoFechaFin" value="2025-04-10">
+                                </div>
+    
+                                <div class="form-group col">
+                                    <label for="nuevoPedidoPrecio" class="form-label">Precio</label>
+                                    <input type="number" class="form-control" id="nuevoPedidoPrecio" value="100.00">
+                                </div>
+    
+                                <div class="form-group col">
+                                    <label for="nuevoPedidoSubtotal" class="form-label">Subtotal</label>
+                                    <input type="number" class="form-control" id="nuevoPedidoSubtotal" value="100.00" disabled>
+                                </div>
+    
+                                <button class="btn btn-icon danger-btn">
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                </button>
                             </div>
-
-                            <div class="mb-form form-group col">
-                                <label for="nuevoPedidoCantidad" class="form-label">Cantidad</label>
-                                <input type="number" class="form-control" id="nuevoPedidoCantidad" value="1">
-                                <div class="text-help">Ingrese una cantidad</div>
-                            </div>
-
-                            <div class="mb-form form-group col">
-                                <label for="nuevoPedidoFechaInicio" class="form-label">Fecha de inicio</label>
-                                <input type="date" class="form-control" id="nuevoPedidoFechaInicio" value="2024-10-10">
-                                <div class="text-help">Ingrese una fecha</div>
-                            </div>
-
-                            <div class="mb-form form-group col">
-                                <label for="nuevoPedidoFechaFin" class="form-label">Fecha de fin</label>
-                                <input type="date" class="form-control" id="nuevoPedidoFechaFin" value="2025-04-10">
-                                <div class="text-help">Ingrese una fecha</div>
-                            </div>
-
-                            <div class="mb-form form-group col">
-                                <label for="nuevoPedidoPrecio" class="form-label">Precio</label>
-                                <input type="number" class="form-control" id="nuevoPedidoPrecio" value="100.00">
-                                <div class="text-help">Ingrese una cantidad</div>
-                            </div>
-
-                            <div class="mb-form form-group col">
-                                <label for="nuevoPedidoSubtotal" class="form-label">Subtotal</label>
-                                <input type="number" class="form-control" id="nuevoPedidoSubtotal" value="100.00" disabled>
-                                <div class="text-help">Ingrese una cantidad</div>
-                            </div>
-
-                            <button class="btn btn-icon danger-btn mb-form">
-                                <span class="material-symbols-outlined">
-                                    delete
-                                </span>
-                            </button>
+                            <p class="text-help-row">
+                                Datos incorrectos, por favor intenete de nuevo.
+                            </p>
                         </div>
                         
                         <div class="form-group mb-2">

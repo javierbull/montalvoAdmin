@@ -2931,6 +2931,17 @@ figure figcaption {
     align-items: end;
     gap: 1rem;
 }
+
+/* .text-help {
+    display: block;
+} */
+
+.text-help-row {
+    color: var(--red5);
+    font-size: .875rem;
+    display: none;
+    /* display: block; */
+}
 /* End pedidos */
 /* END MODULOS MONTALVO */
 
