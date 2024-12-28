@@ -64,11 +64,20 @@
                         </div>
                     </button>
                 </li>
+                <li class="sidebar-item">
+                    <button class="btn sidebar-item-btn showAdminPanel-codigos sidebar-item-db">
+                        <div class="sidebar-item-btn-left">
+                            <span class="material-symbols-outlined">
+                                barcode_scanner
+                            </span>
+                            Códigos
+                        </div>
+                    </button>
+                </li>
             </ul>
         </div>
 
         <div class="admin-panel">
-
             <div class="panel active-panel" id="dashboard-panel">
                 <nav class="navbar-panel">
                     <div class="navbar-panel__title">
@@ -925,6 +934,75 @@
                             </button>
                         </div>
                     </div>
+
+                    <div class="confirm-canje">
+                        <div class="card-confirm-canje">
+                            <div class="confirm-canje-header">
+                                <span class="material-symbols-outlined">
+                                    check_circle
+                                </span>
+    
+                                <h2 class="headline2">
+                                    Confirmación de canje
+                                </h2>
+                            </div>
+
+                            <div class="wrap-code-canje">
+                                <p>
+                                    El giftcard
+                                </p>
+                                <div class="card-codeCanje">
+                                    BPBM-00000035
+                                </div>
+                                <p>
+                                    Se ha canjeado con éxito
+                                </p>
+                            </div>
+
+                            <div class="wrap-confirm-canje-data">
+
+                                <div class="confirm-canje-data">
+                                    <p class="confirm-canje-label">
+                                        Cliente:
+                                    </p>
+                                    <p class="confirm-canje-desc">
+                                        Guillerme Neyra
+                                    </p>
+                                </div>
+
+                                <div class="confirm-canje-data">
+                                    <p class="confirm-canje-label">
+                                        DNI / CE:
+                                    </p>
+                                    <p class="confirm-canje-desc">
+                                        45896523
+                                    </p>
+                                </div>
+
+                                <div class="confirm-canje-data">
+                                    <p class="confirm-canje-label">
+                                        Valor de consumo:
+                                    </p>
+                                    <p class="confirm-canje-desc">
+                                        S/ 30.00
+                                    </p>
+                                </div>
+
+                                <div class="confirm-canje-data">
+                                    <p class="confirm-canje-label">
+                                        Saldo actual:
+                                    </p>
+                                    <p class="confirm-canje-desc">
+                                        S/ 50.00
+                                    </p>
+                                </div>
+
+                                <button class="btn primary-btn">
+                                    Canjear otro gift card
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1197,7 +1275,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="colaboradoresFiltrar">Filtrar pedidos</h5>
+                    <h5 class="modal-title" id="colaboradoresFiltrar">Confirmar canje</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

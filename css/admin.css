@@ -3025,6 +3025,54 @@ figure figcaption {
 .card-info span, .card-info p {
     color: var(--blue6);
 }
+
+.card-confirm-canje {
+    padding: 1.5rem;
+    background-color: var(--white);
+    border: solid 1px var(--gray3);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card-confirm-canje span {
+    font-size: 3.5rem;
+    color: var(--green5);
+}
+
+.wrap-code-canje p {
+    margin-bottom: .25rem;
+}
+
+.card-codeCanje {
+    border: solid 1px var(--gray7);
+    padding: .75rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: .25rem;
+}
+
+.confirm-canje-label {
+    color: var(--gray5);
+    font-size: .875rem;
+    margin-bottom: 0;
+}
+
+.confirm-canje-desc {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
 /* End gift cards */
 /* END MODULOS MONTALVO */
 
