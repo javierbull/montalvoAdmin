@@ -920,7 +920,7 @@
                         </div>
 
                         <div class="form-actions-right">
-                            <button type="button" class="btn primary-btn">
+                            <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#modalConfirmarCanjeGiftcard">
                                 Canjear gift card
                             </button>
                         </div>
@@ -1191,72 +1191,54 @@
     </div>
     <!-- End Modal enviar pedido-->
 
-    <!-- Modal editar contactos-->
-    <div class="modal fade" id="modalEditarContacto" tabindex="-1" aria-labelledby="colaboradoresFiltrar"
+    <!-- Modal filtrar confirmar canje giftcard-->
+    <div class="modal fade" id="modalConfirmarCanjeGiftcard" tabindex="-1" aria-labelledby="colaboradoresFiltrar"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="colaboradoresFiltrar">Editar contacto</h5>
+                    <h5 class="modal-title" id="colaboradoresFiltrar">Filtrar pedidos</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
 
+                    <p>
+                        Ingrese los datos del cliente para canjear el Gift card.
+                    </p>
+
                     <form class="form-modal">
-                        <div class="mb-form">
-                            <label for="editarContactoNombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="editarContactoNombre">
+                        <div class="mb-form form-group">
+                            <label for="canjeGiftcardNombre" class="form-label">Nombre del cliente</label>
+                            <input type="text" class="form-control" id="canjeGiftcardNombre">
                             <div class="text-help">Ingrese un nombre válido</div>
                         </div>
 
-                        <div class="mb-form">
-                            <label for="editarContactoApellidoPaterno" class="form-label">Apellido paterno</label>
-                            <input type="text" class="form-control" id="editarContactoApellidoPaterno">
-                            <div class="text-help">Ingrese un apellido válido</div>
-                        </div>
-
-                        <div class="mb-form">
-                            <label for="editarContactoApellidoMaterno" class="form-label">Apellido materno</label>
-                            <input type="text" class="form-control" id="editarContactoApellidoMaterno">
-                            <div class="text-help">Ingrese un apellido válido</div>
-                        </div>
-
-                        <div class="mb-form">
-                            <label for="editarContactoCargo" class="form-label">Cargo</label>
-                            <input type="text" class="form-control" id="editarContactoCargo">
-                            <div class="text-help">Ingrese un cargo válido</div>
-                        </div>
-
                         <div class="row g-3">
                             <div class="mb-form form-group col">
-                                <label for="editarContactoTipo" class="form-label">Tipo de contacto</label>
-                                <select class="form-select" aria-label="Default select example" id="editarContactoTipo">
-                                    <option selected>Seleccione</option>
-                                    <option value="1">Principal</option>
-                                    <option value="2">Secundario</option>
+                                <label for="canjeGiftcardTipoDoc" class="form-label">Tipo de documento</label>
+                                <select class="form-select" aria-label="Default select example" id="canjeGiftcardTipoDoc">
+                                    <option value="1" selected>DNI</option>
+                                    <option value="2">CE</option>
                                 </select>
                             </div>
-
+    
                             <div class="mb-form form-group col">
-                                <label for="editarContactoSede" class="form-label">Sede</label>
-                                <select class="form-select" aria-label="Default select example" id="editarContactoSede">
-                                    <option selected>Seleccione</option>
-                                    <option value="1">Miraflores</option>
-                                    <option value="2">Lince</option>
-                                </select>
+                                <label for="canjeGiftcardNumeroDoc" class="form-label">Número</label>
+                                <input type="number" class="form-control" id="canjeGiftcardNumeroDoc">
+                                <div class="text-help">Ingrese un número válido</div>
                             </div>
                         </div>
 
                         <div class="row g-3">
                             <div class="mb-form form-group col">
-                                <label for="editarContactoCorreoCorp" class="form-label">Correo corporativo</label>
-                                <input type="email" class="form-control" id="editarContactoCorreoCorp">
-                                <div class="text-help">Ingrese un correo válido</div>
+                                <label for="canjeGiftcardSaldo" class="form-label">Saldo actual</label>
+                                <input type="text" class="form-control" id="canjeGiftcardSaldo" value="S/ 80.00" disabled>
+                                <div class="text-help">Ingrese un número válido</div>
                             </div>
 
                             <div class="mb-form form-group col">
-                                <label for="nuevoColaboradorCelular" class="form-label">Celular</label>
-                                <input type="number" class="form-control" id="nuevoColaboradorCelular">
+                                <label for="canjeGiftcardValorConsumo" class="form-label">Valor de consumo</label>
+                                <input type="number" class="form-control" id="canjeGiftcardValorConsumo">
                                 <div class="text-help">Ingrese un número válido</div>
                             </div>
                         </div>
@@ -1264,12 +1246,12 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn primary-btn">Guardar</button>
+                    <button type="button" class="btn primary-btn">Canjear gift card</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Modal editar contactos-->
+    <!-- End Modal confirmar canje giftcard-->
 
     <!-- Modal eliminar contacto-->
     <div class="modal fade" id="modalEliminarContacto" tabindex="-1" aria-labelledby="eliminarVisitainhouse"
@@ -1280,7 +1262,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h5 class="modal-title" id="eliminarVisitainhouse">Elimina contacto</h5>
+                    <h5 class="modal-title" id="eliminarVisitainhouse">Confirmar canje</h5>
                     <p class="mb-0">
                         ¿Estás seguro de eliminar este contacto?
                     </p>
