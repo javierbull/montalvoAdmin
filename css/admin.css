@@ -3076,6 +3076,10 @@ figure figcaption {
     font-weight: 700;
     font-size: 1.25rem;
 }
+
+.card-confirm-canje button {
+    width: 100%;
+}
 /* End gift cards */
 /* END MODULOS MONTALVO */
 
