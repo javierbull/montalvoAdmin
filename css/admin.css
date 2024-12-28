@@ -3027,6 +3027,7 @@ figure figcaption {
 }
 
 .card-confirm-canje {
+    width: 25rem;
     padding: 1.5rem;
     background-color: var(--white);
     border: solid 1px var(--gray3);
@@ -3039,6 +3040,8 @@ figure figcaption {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-confirm-canje span {
