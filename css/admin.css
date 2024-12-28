@@ -2984,6 +2984,29 @@ figure figcaption {
     margin-bottom: 0;
     font-size: .875rem;
 }
+
+.content-canje table {
+    margin-bottom: .5rem;
+}
+
+.card-canje-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-canje-icon span {
+    font-size: 2.5rem;
+}
+
+.card-success {
+    background-color: var(--green2);
+    border: solid 1px var(--green5);
+}
+
+.card-success span, .card-success p {
+    color: var(--green6);
+}
 /* End gift cards */
 /* END MODULOS MONTALVO */
 
