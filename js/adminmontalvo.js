@@ -80,6 +80,7 @@ $(document).ready(function () {
         $("#pedidos-panel").hide();
         $("#nuevoPedido-panel").hide();
         $("#giftcard-panel").hide();
+        $("#codigos-panel").hide();
     });
 
     $(".showAdminPanel-pedidos").click(function () {
@@ -87,6 +88,7 @@ $(document).ready(function () {
         $("#pedidos-panel").show();
         $("#nuevoPedido-panel").hide();
         $("#giftcard-panel").hide();
+        $("#codigos-panel").hide();
     });
 
     $(".showAdminPanel-nuevoPedido").click(function () {
@@ -94,6 +96,7 @@ $(document).ready(function () {
         $("#pedidos-panel").hide();
         $("#nuevoPedido-panel").show();
         $("#giftcard-panel").hide();
+        $("#codigos-panel").hide();
     });
 
     $(".showAdminPanel-giftcard").click(function () {
@@ -101,6 +104,15 @@ $(document).ready(function () {
         $("#pedidos-panel").hide();
         $("#nuevoPedido-panel").hide();
         $("#giftcard-panel").show();
+        $("#codigos-panel").hide();
+    });
+
+    $(".showAdminPanel-codigos").click(function () {
+        $("#dashboard-panel").hide();
+        $("#pedidos-panel").hide();
+        $("#nuevoPedido-panel").hide();
+        $("#giftcard-panel").hide();
+        $("#codigos-panel").show();
     });
     // End show panels admin
 
