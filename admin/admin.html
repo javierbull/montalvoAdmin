@@ -1038,7 +1038,7 @@
                 <div class="navbar-actions">
                     <div class="navbar-actions__left">
                         <button type="button" class="btn outline-btn btn-icon" data-bs-toggle="modal"
-                            data-bs-target="#modalFiltrarPedidos">
+                            data-bs-target="#modalFiltrarCodigos">
                             <span class="material-symbols-outlined">
                                 tune
                             </span>
@@ -1091,7 +1091,7 @@
                             <th scope="row">2</th>
                             <td>MONT-125466</td>
                             <td>Tinte</td>
-                            <td>Benavides</td>
+                            <td>Surco</td>
                             <td>10/102024</td>
                             <td>10:30</td>
                             <td>Rosa Crispín Montes</td>
@@ -1425,6 +1425,55 @@
         </div>
     </div>
     <!-- End Modal confirmar canje giftcard-->
+
+    <!-- Modal filtrar codigos-->
+    <div class="modal fade" id="modalFiltrarCodigos" tabindex="-1" aria-labelledby="codigosFiltrar"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="colaboradoresFiltrar">Filtrar códigos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-modal">
+                        
+
+                        <div class="mb-form form-group">
+                            <label for="filtrarCodigosLocal" class="form-label">Local</label>
+                            <select class="form-select select2" aria-label="Default select example" id="filtrarCodigosLocal">
+                                <option selected>Seleccione</option>
+                                <option value="1">Benavides</option>
+                                <option value="2">Magdalena</option>
+                                <option value="3">Miraflores</option>
+                                <option value="4">Surco</option>
+                            </select>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="mb-form form-group col">
+                                <label for="filtrarCodigosFechaInicio" class="form-label">Fecha inicio</label>
+                                <input type="date" class="form-control" id="filtrarCodigosFechaInicio">
+                                <div class="text-help">Ingrese una fecha válida</div>
+                            </div>
+
+                            <div class="mb-form form-group col">
+                                <label for="filtrarCodigosFechaFin" class="form-label">Fecha fin</label>
+                                <input type="date" class="form-control" id="filtrarCodigosFechaFin">
+                                <div class="text-help">Ingrese una fecha válida</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn">Filtrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal filtrar codigos-->
 
     <!-- Modal eliminar contacto-->
     <div class="modal fade" id="modalEliminarContacto" tabindex="-1" aria-labelledby="eliminarVisitainhouse"
