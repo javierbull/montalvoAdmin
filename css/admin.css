@@ -3080,6 +3080,10 @@ figure figcaption {
 .card-confirm-canje button {
     width: 100%;
 }
+
+.content-canje, .confirm-canje {
+    display: none;
+}
 /* End gift cards */
 /* END MODULOS MONTALVO */
 

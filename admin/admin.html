@@ -797,32 +797,33 @@
                 </nav>
 
                 <div class="content-admin">
-                    <div class="content-admin-header">
-                        <h2 class="headline2">
-                            Canjear Gift card
-                        </h2>
-                        <p>
-                            Aquí podrás verificar y canjear los códigos que nuestros clientes hayan comprado.
-                        </p>
-                    </div>
 
-                    <div class="content-row-add-product mb-form">
+                    <div class="content-row-add-product mb-form" id="content-form-verify-giftcard">
+                        <div class="content-admin-header">
+                            <h2 class="headline2">
+                                Canjear Gift card
+                            </h2>
+                            <p>
+                                Aquí podrás verificar y canjear los códigos que nuestros clientes hayan comprado.
+                            </p>
+                        </div>
+
                         <div class="row-add-product">
                             <div class="form-group col">
                                 <label for="nuevoCanjeGiftcard" class="form-label">Código</label>
                                 <input type="text" class="form-control" id="nuevoCanjeGiftcard">
                             </div>
 
-                            <button class="btn accent-btn">
+                            <button class="btn accent-btn show-content-canje-giftcard">
                                 Verificar
                             </button>
                         </div>
                         <p class="text-help-row">
-                            Datos incorrectos, por favor intenete de nuevo.
+                            Código incorrecto, por favor intenete de nuevo.
                         </p>
                     </div>
 
-                    <div class="content-canje">
+                    <div class="content-canje" id="content-canje-giftcard">
                         <div class="card-canje">
                             <p class="card-canje-label">
                                 Boleta de venta
@@ -935,7 +936,7 @@
                         </div>
                     </div>
 
-                    <div class="confirm-canje">
+                    <div class="confirm-canje" id="confirm-canje-giftcard">
                         <div class="card-confirm-canje">
                             <div class="confirm-canje-header">
                                 <span class="material-symbols-outlined">
@@ -996,9 +997,9 @@
                                         S/ 50.00
                                     </p>
                                 </div>
-
                             </div>
-                            <button class="btn primary-btn">
+
+                            <button class="btn primary-btn show-canje-gifcard">
                                 Canjear otro gift card
                             </button>
                         </div>
@@ -1324,7 +1325,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn primary-btn">Canjear gift card</button>
+                    <button type="button" class="btn primary-btn show-confirm-canje-giftcard" data-bs-dismiss="modal">Canjear gift card</button>
                 </div>
             </div>
         </div>

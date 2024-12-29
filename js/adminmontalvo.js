@@ -104,6 +104,22 @@ $(document).ready(function () {
     });
     // End show panels admin
 
-    
+    // Show hide contents canje
+    $(".show-content-canje-giftcard").click(function () {
+        $("#content-canje-giftcard").show();
+    });
+
+    $(".show-confirm-canje-giftcard").click(function () {
+        $("#confirm-canje-giftcard").show();
+        $("#content-canje-giftcard").hide();
+        $("#content-form-verify-giftcard").hide();
+    });
+
+    $(".show-canje-gifcard").click(function () {
+        $("#confirm-canje-giftcard").hide();
+        $("#content-form-verify-giftcard").show();
+    });
+
+    // End how hide contents canje
 
 });
