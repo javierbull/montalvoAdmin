@@ -1176,42 +1176,15 @@
 
                         <div class="card-canje">
                             <p class="card-canje-label">
-                                Gift card
+                                Producto
                             </p>
                             <p class="card-canje-name">
-                                Gift card 100
+                                Corte clásico
                             </p>
                             <p class="card-canje-desc">
-                                Saldo actual: S/ 80.00
+                                Corte de cabello (damas, caballeros y niños)
                             </p>
                         </div>
-
-                        <p class="card-canje-desc">
-                            Consumos
-                        </p>
-                        <table class="table align-middle table-admin">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Fecha</th>
-                                    <th scope="col">Local</th>
-                                    <th scope="col">Consumo</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>10/10/2024</td>
-                                    <td>Montalvo Benavides</td>
-                                    <td>S/ 20.00</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr><td colspan="2"></td>
-                                <td>Consumo total</td>
-                                <td>S/ 20.00</td>
-                            </tr></tfoot>
-                        </table>
 
                         <div class="card-canje card-canje-icon card-success">
                             <div class="card-canje-left">
@@ -1272,7 +1245,7 @@
 
                         <div class="form-actions-right">
                             <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#modalConfirmarCanjeCodigo">
-                                Canjear gift card
+                                Canjear código
                             </button>
                         </div>
                     </div>
@@ -1291,7 +1264,7 @@
 
                             <div class="wrap-code-canje">
                                 <p>
-                                    El giftcard
+                                    El código
                                 </p>
                                 <div class="card-codeCanje">
                                     BPBM-00000035
@@ -1320,28 +1293,10 @@
                                         45896523
                                     </p>
                                 </div>
-
-                                <div class="confirm-canje-data">
-                                    <p class="confirm-canje-label">
-                                        Valor de consumo:
-                                    </p>
-                                    <p class="confirm-canje-desc">
-                                        S/ 30.00
-                                    </p>
-                                </div>
-
-                                <div class="confirm-canje-data">
-                                    <p class="confirm-canje-label">
-                                        Saldo actual:
-                                    </p>
-                                    <p class="confirm-canje-desc">
-                                        S/ 50.00
-                                    </p>
-                                </div>
                             </div>
 
                             <button class="btn primary-btn show-canje-codigo">
-                                Canjear otro gift card
+                                Canjear otro código
                             </button>
                         </div>
                     </div>
@@ -1734,42 +1689,28 @@
                 <div class="modal-body">
 
                     <p>
-                        Ingrese los datos del cliente para canjear el Gift card.
+                        Ingrese los datos del cliente para canjear el código.
                     </p>
 
                     <form class="form-modal">
                         <div class="mb-form form-group">
-                            <label for="canjeGiftcardNombre" class="form-label">Nombre del cliente</label>
-                            <input type="text" class="form-control" id="canjeGiftcardNombre">
+                            <label for="canjeCodigoNombre" class="form-label">Nombre del cliente</label>
+                            <input type="text" class="form-control" id="canjeCodigoNombre">
                             <div class="text-help">Ingrese un nombre válido</div>
                         </div>
 
                         <div class="row g-3">
                             <div class="mb-form form-group col">
-                                <label for="canjeGiftcardTipoDoc" class="form-label">Tipo de documento</label>
-                                <select class="form-select" aria-label="Default select example" id="canjeGiftcardTipoDoc">
+                                <label for="canjeCodigoTipoDoc" class="form-label">Tipo de documento</label>
+                                <select class="form-select" aria-label="Default select example" id="canjeCodigoTipoDoc">
                                     <option value="1" selected>DNI</option>
                                     <option value="2">CE</option>
                                 </select>
                             </div>
     
                             <div class="mb-form form-group col">
-                                <label for="canjeGiftcardNumeroDoc" class="form-label">Número</label>
-                                <input type="number" class="form-control" id="canjeGiftcardNumeroDoc">
-                                <div class="text-help">Ingrese un número válido</div>
-                            </div>
-                        </div>
-
-                        <div class="row g-3">
-                            <div class="mb-form form-group col">
-                                <label for="canjeGiftcardSaldo" class="form-label">Saldo actual</label>
-                                <input type="text" class="form-control" id="canjeGiftcardSaldo" value="S/ 80.00" disabled>
-                                <div class="text-help">Ingrese un número válido</div>
-                            </div>
-
-                            <div class="mb-form form-group col">
-                                <label for="canjeGiftcardValorConsumo" class="form-label">Valor de consumo</label>
-                                <input type="number" class="form-control" id="canjeGiftcardValorConsumo">
+                                <label for="canjeCodigoNumeroDoc" class="form-label">Número</label>
+                                <input type="number" class="form-control" id="canjeCodigoNumeroDoc">
                                 <div class="text-help">Ingrese un número válido</div>
                             </div>
                         </div>
