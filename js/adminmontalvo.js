@@ -81,6 +81,7 @@ $(document).ready(function () {
         $("#nuevoPedido-panel").hide();
         $("#giftcard-panel").hide();
         $("#codigos-panel").hide();
+        $("#nuevoCodigo-panel").hide();
     });
 
     $(".showAdminPanel-pedidos").click(function () {
@@ -89,6 +90,7 @@ $(document).ready(function () {
         $("#nuevoPedido-panel").hide();
         $("#giftcard-panel").hide();
         $("#codigos-panel").hide();
+        $("#nuevoCodigo-panel").hide();
     });
 
     $(".showAdminPanel-nuevoPedido").click(function () {
@@ -97,6 +99,7 @@ $(document).ready(function () {
         $("#nuevoPedido-panel").show();
         $("#giftcard-panel").hide();
         $("#codigos-panel").hide();
+        $("#nuevoCodigo-panel").hide();
     });
 
     $(".showAdminPanel-giftcard").click(function () {
@@ -105,6 +108,7 @@ $(document).ready(function () {
         $("#nuevoPedido-panel").hide();
         $("#giftcard-panel").show();
         $("#codigos-panel").hide();
+        $("#nuevoCodigo-panel").hide();
     });
 
     $(".showAdminPanel-codigos").click(function () {
@@ -113,6 +117,16 @@ $(document).ready(function () {
         $("#nuevoPedido-panel").hide();
         $("#giftcard-panel").hide();
         $("#codigos-panel").show();
+        $("#nuevoCodigo-panel").hide();
+    });
+
+    $(".showAdminPanel-canjeCodigo").click(function () {
+        $("#dashboard-panel").hide();
+        $("#pedidos-panel").hide();
+        $("#nuevoPedido-panel").hide();
+        $("#giftcard-panel").hide();
+        $("#codigos-panel").hide();
+        $("#nuevoCodigo-panel").show();
     });
     // End show panels admin
 
@@ -127,9 +141,24 @@ $(document).ready(function () {
         $("#content-form-verify-giftcard").hide();
     });
 
-    $(".show-canje-gifcard").click(function () {
+    $(".show-canje-giftcard").click(function () {
         $("#confirm-canje-giftcard").hide();
         $("#content-form-verify-giftcard").show();
+    });
+
+    $(".show-content-canje-codigo").click(function () {
+        $("#content-canje-codigo").show();
+    });
+
+    $(".show-confirm-canje-codigo").click(function () {
+        $("#confirm-canje-codigo").show();
+        $("#content-canje-codigo").hide();
+        $("#content-form-verify-codigo").hide();
+    });
+
+    $(".show-canje-codigo").click(function () {
+        $("#confirm-canje-codigo").hide();
+        $("#content-form-verify-codigo").show();
     });
 
     // End how hide contents canje

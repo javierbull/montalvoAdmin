@@ -999,7 +999,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn primary-btn show-canje-gifcard">
+                            <button class="btn primary-btn show-canje-giftcard">
                                 Canjear otro gift card
                             </button>
                         </div>
@@ -1099,6 +1099,253 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <div class="panel" id="nuevoCodigo-panel">
+                <nav class="navbar-panel">
+                    <div class="navbar-panel__title">
+                        <h2>Canjes de códigos</h2>
+                        <p>
+                            Gestiona los canjes de tu empresa.
+                        </p>
+                    </div>
+
+                    <div class="wrap-switch-btn-perfil">
+
+                        <div class="btn-group-dropdown-perfil">
+                            <button type="button" class="btn btn-style-none dropdown-toggle dropdown-admin"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profiles/perfil.png" alt="Foto perfil" class="dropdown-admin__img">
+                                <span class="material-symbols-outlined">
+                                    keyboard_arrow_down
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Perfil</button></li>
+                                <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+
+                <div class="navbar-actions">
+                    <button type="button" class="btn outline-btn btn-icon showAdminPanel-codigos">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </button>
+                </div>
+
+                <div class="content-admin">
+
+                    <div class="content-row-add-product mb-form" id="content-form-verify-codigo">
+                        <div class="content-admin-header">
+                            <h2 class="headline2">
+                                Canjear código
+                            </h2>
+                            <p>
+                                Aquí podrás verificar y canjear los códigos que nuestros clientes hayan comprado.
+                            </p>
+                        </div>
+
+                        <div class="row-add-product">
+                            <div class="form-group col">
+                                <label for="nuevoCanjeCodigo" class="form-label">Código</label>
+                                <input type="text" class="form-control" id="nuevoCanjeCodigo">
+                            </div>
+
+                            <button class="btn accent-btn show-content-canje-codigo">
+                                Verificar
+                            </button>
+                        </div>
+                        <p class="text-help-row">
+                            Código incorrecto, por favor intenete de nuevo.
+                        </p>
+                    </div>
+
+                    <div class="content-canje" id="content-canje-codigo">
+                        <div class="card-canje">
+                            <p class="card-canje-label">
+                                Boleta de venta
+                            </p>
+                            <p class="card-canje-name">
+                                BPBM-00000035
+                            </p>
+                        </div>
+
+                        <div class="card-canje">
+                            <p class="card-canje-label">
+                                Gift card
+                            </p>
+                            <p class="card-canje-name">
+                                Gift card 100
+                            </p>
+                            <p class="card-canje-desc">
+                                Saldo actual: S/ 80.00
+                            </p>
+                        </div>
+
+                        <p class="card-canje-desc">
+                            Consumos
+                        </p>
+                        <table class="table align-middle table-admin">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Local</th>
+                                    <th scope="col">Consumo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>10/10/2024</td>
+                                    <td>Montalvo Benavides</td>
+                                    <td>S/ 20.00</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr><td colspan="2"></td>
+                                <td>Consumo total</td>
+                                <td>S/ 20.00</td>
+                            </tr></tfoot>
+                        </table>
+
+                        <div class="card-canje card-canje-icon card-success">
+                            <div class="card-canje-left">
+                                <p class="card-canje-label">
+                                    Estado
+                                </p>
+                                <p class="card-canje-name">
+                                    Disponible para canje
+                                </p>
+                            </div>
+                            <div class="card-canje-right">
+                                <span class="material-symbols-outlined">
+                                    check_circle
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="card-canje card-canje-icon card-danger">
+                            <div class="card-canje-left">
+                                <p class="card-canje-label">
+                                    Estado
+                                </p>
+                                <p class="card-canje-name">
+                                    Gift card canjeado
+                                </p>
+                            </div>
+                            <div class="card-canje-right">
+                                <span class="material-symbols-outlined">
+                                    cancel
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="card-canje card-canje-icon card-info">
+                            <div class="card-canje-left">
+                                <p class="card-canje-label">
+                                    Estado
+                                </p>
+                                <p class="card-canje-name">
+                                    Gift card vencido
+                                </p>
+                            </div>
+                            <div class="card-canje-right">
+                                <span class="material-symbols-outlined">
+                                    event_busy
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="card-canje">
+                            <p class="card-canje-label">
+                                Fecha de vencimiento
+                            </p>
+                            <p class="card-canje-name">
+                                12 de diciembre del 2024
+                            </p>
+                        </div>
+
+                        <div class="form-actions-right">
+                            <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#modalConfirmarCanjeCodigo">
+                                Canjear gift card
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="confirm-canje" id="confirm-canje-codigo">
+                        <div class="card-confirm-canje">
+                            <div class="confirm-canje-header">
+                                <span class="material-symbols-outlined">
+                                    check_circle
+                                </span>
+    
+                                <h2 class="headline2">
+                                    Confirmación de canje
+                                </h2>
+                            </div>
+
+                            <div class="wrap-code-canje">
+                                <p>
+                                    El giftcard
+                                </p>
+                                <div class="card-codeCanje">
+                                    BPBM-00000035
+                                </div>
+                                <p>
+                                    Se ha canjeado con éxito
+                                </p>
+                            </div>
+
+                            <div class="wrap-confirm-canje-data">
+
+                                <div class="confirm-canje-data">
+                                    <p class="confirm-canje-label">
+                                        Cliente:
+                                    </p>
+                                    <p class="confirm-canje-desc">
+                                        Guillerme Neyra
+                                    </p>
+                                </div>
+
+                                <div class="confirm-canje-data">
+                                    <p class="confirm-canje-label">
+                                        DNI / CE:
+                                    </p>
+                                    <p class="confirm-canje-desc">
+                                        45896523
+                                    </p>
+                                </div>
+
+                                <div class="confirm-canje-data">
+                                    <p class="confirm-canje-label">
+                                        Valor de consumo:
+                                    </p>
+                                    <p class="confirm-canje-desc">
+                                        S/ 30.00
+                                    </p>
+                                </div>
+
+                                <div class="confirm-canje-data">
+                                    <p class="confirm-canje-label">
+                                        Saldo actual:
+                                    </p>
+                                    <p class="confirm-canje-desc">
+                                        S/ 50.00
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="btn primary-btn show-canje-codigo">
+                                Canjear otro gift card
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1365,7 +1612,7 @@
     <!-- End Modal enviar pedido-->
 
     <!-- Modal filtrar confirmar canje giftcard-->
-    <div class="modal fade" id="modalConfirmarCanjeGiftcard" tabindex="-1" aria-labelledby="colaboradoresFiltrar"
+    <div class="modal fade" id="modalConfirmarCanjeGiftcard" tabindex="-1" aria-labelledby="confirmarGiftcard"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -1474,6 +1721,68 @@
         </div>
     </div>
     <!-- End Modal filtrar codigos-->
+
+    <!-- Modal filtrar confirmar canje codigo-->
+    <div class="modal fade" id="modalConfirmarCanjeCodigo" tabindex="-1" aria-labelledby="confirmarCodigo"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="colaboradoresFiltrar">Confirmar canje</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <p>
+                        Ingrese los datos del cliente para canjear el Gift card.
+                    </p>
+
+                    <form class="form-modal">
+                        <div class="mb-form form-group">
+                            <label for="canjeGiftcardNombre" class="form-label">Nombre del cliente</label>
+                            <input type="text" class="form-control" id="canjeGiftcardNombre">
+                            <div class="text-help">Ingrese un nombre válido</div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="mb-form form-group col">
+                                <label for="canjeGiftcardTipoDoc" class="form-label">Tipo de documento</label>
+                                <select class="form-select" aria-label="Default select example" id="canjeGiftcardTipoDoc">
+                                    <option value="1" selected>DNI</option>
+                                    <option value="2">CE</option>
+                                </select>
+                            </div>
+    
+                            <div class="mb-form form-group col">
+                                <label for="canjeGiftcardNumeroDoc" class="form-label">Número</label>
+                                <input type="number" class="form-control" id="canjeGiftcardNumeroDoc">
+                                <div class="text-help">Ingrese un número válido</div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="mb-form form-group col">
+                                <label for="canjeGiftcardSaldo" class="form-label">Saldo actual</label>
+                                <input type="text" class="form-control" id="canjeGiftcardSaldo" value="S/ 80.00" disabled>
+                                <div class="text-help">Ingrese un número válido</div>
+                            </div>
+
+                            <div class="mb-form form-group col">
+                                <label for="canjeGiftcardValorConsumo" class="form-label">Valor de consumo</label>
+                                <input type="number" class="form-control" id="canjeGiftcardValorConsumo">
+                                <div class="text-help">Ingrese un número válido</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn outline-btn" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn primary-btn show-confirm-canje-codigo" data-bs-dismiss="modal">Canjear código</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal confirmar canje codigo-->
 
     <!-- Modal eliminar contacto-->
     <div class="modal fade" id="modalEliminarContacto" tabindex="-1" aria-labelledby="eliminarVisitainhouse"
